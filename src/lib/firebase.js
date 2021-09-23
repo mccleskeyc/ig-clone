@@ -9,4 +9,6 @@ apiKey: "AIzaSyBevrRRm9F4CMjr5MLotG_9CCsR4RIVpuE",
 
   const firebase = window.firebase.initializeApp(config);
 
-  export { firebase };
+  const { FieldValue } = window.firebase.firestore;
+
+  export { firebase, FieldValue };
