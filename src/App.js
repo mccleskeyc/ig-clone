@@ -7,5 +7,7 @@ const Profile = lazy(() => import ('./pages/profile'));
 const NotFound = lazy(() => import ('./pages/not-found'));
 
 export default function App() {
-    return (<p>Hello</p>)
+    return (<Suspense fallback={<p>Loading...</p>}>
+        <p>This is where our content will be</p>
+    </Suspense>)
 }
